@@ -71,7 +71,6 @@ const addSchool = (req, res) => {
                     message: err.sqlMessage
                 })
             }
-            console.log(err)
             return res.status(500).json({
                 success: false,
                 message: "Database connection error"

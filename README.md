@@ -37,7 +37,8 @@ Create a .env file in the root directory and add the following variables:
   DB_HOST=localhost
   DB_USER=root
   DB_PASSWORD=yourpassword
-  DB_NAME=school_database
+  MYSQL_DB=yourdatabasename
+  DB_PORT=3306
   ```
 4. **Set Up the Database**
 

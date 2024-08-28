@@ -85,8 +85,8 @@ const addSchool = (req, res) => {
 }
 
 const listSchools = (req, res) => {
-    const body = req.body
-    const { latitude, longitude } = body
+    console.log(req)
+    const { latitude, longitude } = req.query
 
     if (!latitude || !longitude) {
         return res.status(400).json({ error: 'Latitude and longitude are required' });

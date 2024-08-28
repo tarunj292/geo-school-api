@@ -6,7 +6,9 @@ const schoolRouter = require('./api/schools/schoolRouter')
 app.use(express.json())
 
 app.use('/api', schoolRouter)
-
+app.use('/', (req, res) => {
+    res.send('Hello');
+  });
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {

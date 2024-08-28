@@ -85,7 +85,7 @@ const addSchool = (req, res) => {
 }
 
 const listSchools = (req, res) => {
-    console.log(req)
+    
     const { latitude, longitude } = req.query
 
     if (!latitude || !longitude) {
@@ -135,4 +135,7 @@ const listSchools = (req, res) => {
     })
 }
 
-module.exports = { addSchool, listSchools }
+const check = (req, res) => {
+    res.json({working: "work"})
+}
+module.exports = { addSchool, listSchools, check }

@@ -34,11 +34,11 @@ The School Management API provides functionalities to manage school data using N
 3. **Set Up Environment Variables**
 Create a .env file in the root directory and add the following variables:
   ```
-  DB_HOST=localhost
-  DB_USER=root
-  DB_PASSWORD=yourpassword
-  MYSQL_DB=yourdatabasename
-  DB_PORT=3306
+  MYSQLHOST=localhost
+  MYSQLUSER=root
+  MYSQLPASSWORD=yourpassword
+  MYSQLDATABASE=yourdatabasename
+  MYSQLPORT=3306
   ```
 4. **Set Up the Database**
 

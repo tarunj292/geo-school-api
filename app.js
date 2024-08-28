@@ -9,6 +9,9 @@ app.use('/api', schoolRouter)
 app.use('/', (req, res) => {
     res.send('Hello');
   });
+app.use('*', (req, res) => {
+    res.status(404).send('404 Not found');
+});
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {

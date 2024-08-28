@@ -2,7 +2,7 @@ const { add, list } = require('./schoolService')
 const { calculateDistance } = require('../../utils/calculateDistance')
 const addSchool = (req, res) => {
     const body = req.body
-    const { name, address, latitude, longitude } = body
+    const { id, name, address, latitude, longitude } = body
     if (!id || !name || !address || !latitude || !longitude) {
         return res.status(400).json({
             success: false,
@@ -135,7 +135,4 @@ const listSchools = (req, res) => {
     })
 }
 
-const check = (req, res) => {
-    res.json({working: "work"})
-}
-module.exports = { addSchool, listSchools, check }
+module.exports = { addSchool, listSchools }

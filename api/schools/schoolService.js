@@ -1,7 +1,7 @@
-const pool = require('../../config/db.config')
+const connection = require('../../config/db.config')
 
 const add = (data, callBack) => {
-    pool.query(
+    connection.query(
         `insert into schools(id, name, address, latitude, longitude) values (?,?,?,?,?)`,
         [
             data.id,
@@ -23,7 +23,7 @@ const add = (data, callBack) => {
 
 const list = (callBack) => {
 
-    pool.query(
+    connection.query(
         `SELECT * from schools`,
         (error, results, fields) => {
             if (error) {

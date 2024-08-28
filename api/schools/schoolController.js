@@ -3,10 +3,10 @@ const { calculateDistance } = require('../../utils/calculateDistance')
 const addSchool = (req, res) => {
     const body = req.body
     const { name, address, latitude, longitude } = body
-    if (!name || !address || !latitude || !longitude) {
+    if (!id || !name || !address || !latitude || !longitude) {
         return res.status(400).json({
             success: false,
-            message: "All fields (name, address, latitude, longitude) are required."
+            message: "All fields (id, name, address, latitude, longitude) are required."
         });
     }
 
@@ -73,7 +73,7 @@ const addSchool = (req, res) => {
             }
             return res.status(500).json({
                 success: false,
-                message: "Database connection error"
+                message: err
             })
         }
         return res.status(201).json({

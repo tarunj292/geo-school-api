@@ -23,7 +23,8 @@ The School Management API provides functionalities to manage school data using N
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/<yourusername>/school-management-api.git
+   git clone https://github.com/tarunj292
+   /school-management-api.git
    cd school-management-api
    ```
 2. **Install Dependencies**
@@ -40,12 +41,8 @@ Create a .env file in the root directory and add the following variables:
   MYSQLDATABASE=yourdatabasename
   MYSQLPORT=3306
   ```
-4. **Set Up the Database**
 
-Create a MySQL database named school_database.
-Use the provided SQL script to set up the schools table.
-
-5. **Running the Application** 
+4. **Running the Application** 
 
   #1. ***Start the Server***
   ```bash
@@ -57,44 +54,3 @@ The server will be running on http://localhost:3000.
   ```bash
   npm run dev
   ```
-<!--API Endpoints
-Add School API
-Endpoint: /addSchool
-
-Method: POST
-
-Payload:
-
-json
-Copy code
-{
-  "name": "School Name",
-  "address": "School Address",
-  "latitude": 12.3456,
-  "longitude": 65.4321
-}
-Response:
-
-201 Created on successful addition.
-400 Bad Request for validation errors.
-List Schools API
-Endpoint: /listSchools
-
-Method: GET
-
-Parameters:
-
-latitude (User’s latitude)
-longitude (User’s longitude)
-Response:
-
-200 OK with a list of schools sorted by proximity.
-400 Bad Request if parameters are missing.
-Postman Collection
-A Postman collection is available for testing the APIs. Download the Postman collection.
-
-Deployment
-The API can be deployed on any suitable hosting service such as Heroku, Vercel, or AWS. Detailed deployment instructions can be found in the DEPLOYMENT.md file.
-
-Contributing
-Feel free to submit issues or pull requests. For more information on contributing, please refer to CONTRIBUTING.md.-->
